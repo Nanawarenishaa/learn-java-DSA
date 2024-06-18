@@ -1,34 +1,10 @@
-import java.util.Scanner;
-
 public class factorialNo {
-    public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter a number:");
-        int num = scanner.nextInt();
-
-        long factorial = 1 ;
-        for(int i = 1; i<=num ; i ++){
-            factorial *= i;
-
+    public static void main(String[] args) {
+        int i, fact = 1 ;
+        int num = 5 ;
+        for( i = 1 ; i <= num ; i++ ){
+            fact = fact * i ;
         }
-       System.out.println("factorial of " + num + " is " + factorial);
-       scanner.close();
-    }
-}
-  
-class factorialNumber{
-    public static void main(String[] args){
-       Scanner scanner = new Scanner(System.in);
-       System.out.println("enter a number : ");
-       int num = scanner.nextInt();
-       long factorial= factorial(num);
-       System.out.println("factorial of " + num + " : " + factorial);
-      scanner.close();
-    }
-    public static long factorial(int num){
-        if (num == 0){
-            return 1;
-        }
-        return num* factorial(num-1);
+        System.out.println("factorial of " + num + " is " + fact );
     }
 }
